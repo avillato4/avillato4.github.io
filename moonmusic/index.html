@@ -15,17 +15,29 @@ o a un costat, els colors de les lletres i el fons, el tipus de lletra. A difer�
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heart, Crescent Moon, and Rainbow Animation</title>
+    <title>Moving shapes</title>
     <style>
         body {
            border-style: double;
             border: 5px;/* això farà que tot el cos del codi (body) tingui 5 pixels de gruix en totes direccions*/
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: center;/* alnia tot en el centre*/
             justify-content: center;
             min-height: 100vh;
-            background-color: #0d335f;
+            background-color: #0d335f;/*color de fons*/
+            /*els colors es poden escriure amb el seu nom en anglès.
+            Es poden escriure amb RGB (red, green, blue) i podem posar un número, dos números, tres números o quatre números. Si posem un sol número
+            és l'escala de grisos sent 0 negre i 255 blanc (127 seria un gris, gris fosc 200 i gris claro 60). Si dos números el primer és l'escala de grisos 
+            i el segon la transparència o cana alfa sent 0 transparent i 255 opac (127 semi transparent). 
+            Si posem tres números son red, green and blue. Per exemple 255,0,0 és el vermell més fort; 0,255,0 és el verd més intens; 0,0,255 és el blau més fort
+            Quants colors diferents tenim? 255x255x255=16.700.000 colors diferents. Si escric color picker RGB HTML puc trobar qualsevol color, per exemple
+            un estil de rosa és rgb (255,51,153). Aquest mateix color de rosa el puc posar en números hexadecimals. Els números hexadeimals són del zero al nou, el deu
+            és A, 11 és B, 12 és C, 13 és D, 14 ës E, i 15 F i així tenim 16 números diferents que el significat de hexadecimal. El número FF0000 és igual que 255,0,0;
+            el número 00FF00 és igual que 0,255,0; 0000FF és igual que 0,0,255. Per què FF és 255? 255=2x10^2+5x10^0=200+50+5 i FF és base 16 no en base 10, FF és igual
+            a 15x16^1+15x16^0=240+15=255. Quant és CACA00? CA=12x16^2+10x16^0=202
+            CACA00 seria 202,202,0 que és un color groc.0D335F? 0D=0x16^1+15x16^0=240 33=16^1+3x16^0=51 o sigui 33 en hexadecimal és 51
+            en decimal. 5F=5x16^1+15x16^0=95. És a dir és el color RGB 240,51,95 que és un rosa.*/
             margin: 0;
             padding: 20px;
             box-sizing: border-box;
