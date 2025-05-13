@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Art Geomètric Amb Expressió Facial</title>
   <!-- Llibreria p5.js per fer gràfics interactius -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.js"></script>
+  <script src="p5.js"></script>
   <!-- Llibreria ml5.js per reconeixement facial amb machine learning -->
   <script src="https://cdn.jsdelivr.net/gh/ml5js/Intro-ML-Arts-IMA@ml5-build-10-7-19/ml5_build/ml5.min.js"></script>
   <style>
@@ -153,7 +153,7 @@
       switch (dominant) {
         case 'happy':
           stroke(255,200,0); // groc
-         beginShape();Cap
+         beginShape();//Cap
 vertex(154, 127);
 vertex(153, 160);
 vertex(156, 165);
@@ -170,7 +170,7 @@ vertex(155, 166);
 vertex(162, 166);
 vertex(170, 149);
 vertex(169, 143);
-endShape();
+endShape(CLOSE);
 
 beginShape();
 vertex(119, 104);
@@ -187,6 +187,7 @@ vertex(125, 121);
 vertex(117, 108);
 vertex(122, 103);
 endShape(CLOSE);
+          
           break;
 
         case 'sad':
@@ -224,15 +225,97 @@ endShape(CLOSE);
 
         case 'surprised':
           stroke(0,150,255,150); // blau clar
-          beginShape();
-          for (let i = 0; i < 20; i++) {
-            let angle = random(TWO_PI);
-            let r = 50 + 100 * intensity;
-            let x = VIRTUAL_W/2 + r * cos(angle);
-            let y = VIRTUAL_H/2 + r * sin(angle);
-            vertex(x, y);
-          }
-          endShape(CLOSE);
+         beginShape();//cap despentinat
+vertex(123.0078125, 146.71875);
+vertex(127.0078125, 150.71875);
+vertex(129.0078125, 153.71875);
+vertex(131.0078125, 156.71875);
+vertex(134.0078125, 156.71875);
+vertex(138.0078125, 157.71875);
+vertex(140.0078125, 156.71875);
+vertex(143.0078125, 155.71875);
+vertex(146.0078125, 151.71875);
+vertex(150.0078125, 146.71875);
+vertex(150.0078125, 140.71875);
+vertex(149.0078125, 131.71875);
+vertex(149.0078125, 125.71875);
+vertex(144.0078125, 117.71875);
+vertex(133.0078125, 117.71875);
+vertex(127.0078125, 117.71875);
+vertex(122.0078125, 120.71875);
+vertex(123.0078125, 127.71875);
+vertex(122.0078125, 136.71875);
+vertex(124.0078125, 143.71875);
+vertex(119.0078125, 147.71875);
+vertex(111.0078125, 147.71875);
+vertex(92.0078125, 144.71875);
+vertex(79.0078125, 140.71875);
+vertex(84.0078125, 137.71875);
+vertex(94.0078125, 132.71875);
+vertex(104.0078125, 131.71875);
+vertex(112.0078125, 130.71875);
+vertex(100.0078125, 122.71875);
+vertex(85.0078125, 114.71875);
+vertex(77.0078125, 101.71875);
+vertex(90.0078125, 98.71875);
+vertex(101.0078125, 101.71875);
+vertex(110.0078125, 107.71875);
+vertex(116.0078125, 103.71875);
+vertex(107.0078125, 92.71875);
+vertex(99.0078125, 84.71875);
+vertex(95.0078125, 72.71875);
+vertex(109.0078125, 69.71875);
+vertex(115.0078125, 72.71875);
+vertex(123.0078125, 79.71875);
+vertex(131.0078125, 88.71875);
+vertex(133.0078125, 91.71875);
+vertex(138.0078125, 79.71875);
+vertex(129.0078125, 67.71875);
+vertex(119.0078125, 59.71875);
+vertex(111.0078125, 54.71875);
+vertex(115.0078125, 50.71875);
+vertex(122.0078125, 53.71875);
+vertex(128.0078125, 56.71875);
+vertex(136.0078125, 62.71875);
+vertex(145.0078125, 69.71875);
+vertex(154.0078125, 83.71875);
+vertex(155.0078125, 94.71875);
+vertex(160.0078125, 86.71875);
+vertex(174.0078125, 68.71875);
+vertex(191.0078125, 56.71875);
+vertex(199.0078125, 56.71875);
+vertex(205.0078125, 57.71875);
+vertex(202.0078125, 62.71875);
+vertex(199.0078125, 64.71875);
+vertex(193.0078125, 69.71875);
+vertex(190.0078125, 75.71875);
+vertex(186.0078125, 83.71875);
+vertex(180.0078125, 91.71875);
+vertex(175.0078125, 102.71875);
+vertex(172.0078125, 108.71875);
+vertex(169.0078125, 114.71875);
+vertex(204.0078125, 110.71875);
+vertex(217.0078125, 108.71875);
+vertex(226.0078125, 111.71875);
+vertex(234.0078125, 115.71875);
+vertex(239.0078125, 120.71875);
+vertex(231.0078125, 121.71875);
+vertex(221.0078125, 121.71875);
+vertex(209.0078125, 121.71875);
+vertex(190.0078125, 123.71875);
+vertex(179.0078125, 128.71875);
+vertex(170.0078125, 131.71875);
+vertex(183.0078125, 137.71875);
+vertex(200.0078125, 140.71875);
+vertex(211.0078125, 141.71875);
+vertex(222.0078125, 144.71875);
+vertex(217.0078125, 147.71875);
+vertex(205.0078125, 150.71875);
+vertex(198.0078125, 150.71875);
+vertex(171.0078125, 150.71875);
+vertex(160.0078125, 147.71875);
+vertex(149.0078125, 145.71875);
+endShape();
           break;
 
         case 'disgusted':
