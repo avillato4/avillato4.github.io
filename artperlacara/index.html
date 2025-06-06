@@ -129,6 +129,7 @@
       translate(offsetX, offsetY); // desplaça l'origen
       scale(scaleFactor); // redimensiona proporcionalment
       drawArt(dominant, intensity); // dibuixa la figura segons l'expressió
+      try {
       pop(); // recupera l'estat anterior
 
       // Mostra el text amb l'expressió dominant (fora de transformacions)
@@ -3637,3 +3638,13 @@ vertex(144.0078125, 118.71875);
 vertex(125.0078125, 117.71875);
 vertex(123.0078125, 118.71875);
 endShape(CLOSE);
+          }
+
+  } catch (error) {
+    console.error("drawArt() ha fallat:", {
+      message: error.message,
+      cause: error.cause,
+      stack: error.stack
+    });
+  }
+}
